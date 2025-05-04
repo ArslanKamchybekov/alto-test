@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D43048072DC7D95B006B5228 /* Instabug in Frameworks */ = {isa = PBXBuildFile; productRef = D43048062DC7D95B006B5228 /* Instabug */; };
 		D4F676E62A41460D003A2050 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F676E52A41460D003A2050 /* AppDelegate.swift */; };
 		D4F676E82A41460D003A2050 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F676E72A41460D003A2050 /* SceneDelegate.swift */; };
 		D4F676EA2A41460D003A2050 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F676E92A41460D003A2050 /* ViewController.swift */; };
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D43048072DC7D95B006B5228 /* Instabug in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +113,9 @@
 				Base,
 			);
 			mainGroup = D4F676D92A41460D003A2050;
+			packageReferences = (
+				D43048052DC7D95B006B5228 /* XCRemoteSwiftPackageReference "Instabug-SP" */,
+			);
 			productRefGroup = D4F676E32A41460D003A2050 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -287,6 +292,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BGH2F29R4C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "CodePath App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -314,6 +320,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BGH2F29R4C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "CodePath App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -356,6 +363,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D43048052DC7D95B006B5228 /* XCRemoteSwiftPackageReference "Instabug-SP" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Instabug/Instabug-SP";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D43048062DC7D95B006B5228 /* Instabug */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D43048052DC7D95B006B5228 /* XCRemoteSwiftPackageReference "Instabug-SP" */;
+			productName = Instabug;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D4F676DA2A41460D003A2050 /* Project object */;
 }
