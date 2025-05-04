@@ -1,3 +1,4 @@
+```swift
 //
 //  ViewController.swift
 //  CodePath App
@@ -22,7 +23,8 @@ class ViewController: UIViewController {
     }
     @IBAction func introduceSelfDidTapped(_ sender: UIButton) {
         let year = yearSegmentedControl.titleForSegment(at: yearSegmentedControl.selectedSegmentIndex)
-        let introduction = "My name is \(firstNameTextField.text!) \(lastNameTextField.text!) and I attend \(schoolTextField.text!). I am currently in my \(year!) year and I own \(numberOfPetsLabel.text!) dogs. It is \(morePetsSwitch.isOn) that I want more pets."
+        let numberOfPets = numberOfPetsLabel.text ?? "0"
+        let introduction = "My name is \(firstNameTextField.text!) \(lastNameTextField.text!) and I attend \(schoolTextField.text!). I am currently in my \(year!) year and I own \(numberOfPets) dogs. It is \(morePetsSwitch.isOn) that I want more pets."
         let alertController = UIAlertController(title: "My Introduction", message: introduction, preferredStyle: .alert)
         let action = UIAlertAction(title: "Nice to meet you!", style: .default, handler: nil)
         alertController.addAction(action)
@@ -31,8 +33,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        morePetsStepper.value = 0
+        numberOfPetsLabel.text = "0"
     }
 
 }
-
+```
