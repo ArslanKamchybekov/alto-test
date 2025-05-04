@@ -1,3 +1,4 @@
+```swift
 //
 //  ViewController.swift
 //  CodePath App
@@ -18,7 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var morePetsStepper: UIStepper!
     
     @IBAction func stepperDidChange(_ sender: UIStepper) {
-        numberOfPetsLabel.text = "\(Int(sender.value * (-1)))"
+        numberOfPetsLabel.text = "\(Int(sender.value))"
     }
     @IBAction func introduceSelfDidTapped(_ sender: UIButton) {
         let year = yearSegmentedControl.titleForSegment(at: yearSegmentedControl.selectedSegmentIndex)
@@ -35,4 +36,4 @@ class ViewController: UIViewController {
     }
 
 }
-
+```
