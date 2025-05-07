@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var morePetsStepper: UIStepper!
     
     @IBAction func stepperDidChange(_ sender: UIStepper) {
-        numberOfPetsLabel.text = "\(Int(sender.value))"
+        numberOfPetsLabel.text = Int(sender.value).description
     }
     @IBAction func introduceSelfDidTapped(_ sender: UIButton) {
         let year = yearSegmentedControl.titleForSegment(at: yearSegmentedControl.selectedSegmentIndex)
@@ -31,7 +31,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        numberOfPetsLabel.text = "0"
     }
 
 }
